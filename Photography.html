@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <title>photography</title>
+    
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <script src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202202/aaav.jpg?dqfZqqbpCuWgeUVPjFwJQTc1kplyOjK3&size=770:433" crossorigin="anonymous"></script>
+
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    line-height: 1.6;
+}
+img{
+    width: 100%;
+    display: block;
+
+}
+ul li{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 15px 0;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    width: 90vw;
+    margin: 0 auto;
+
+}
+.btn{
+    background: darkGreen;
+    border: none;
+    display: block;
+    width: 150px;
+    text-align: center;
+    color: darkGreen;
+    text-transform: uppercase;
+    background: transparent;
+    font-size: 15px;
+    padding: 12px;
+    border: 2px solid darkGreen;
+    border-radius: 25px 0;
+    margin: 15px 0;
+    transition: transition;
+    
+}
+.btn:hover{
+    background: darkgreen;
+    color: #fff;
+
+}
+.active{
+    color: lightgreen !important;
+}
+
+
+.header{
+    min-height: 100vh;
+    background-image: url("https://wallpaperaccess.com/full/4822398.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+}
+.top-nav a{
+    color: #fff;
+
+}
+.brand-and-navBtn{
+    background: black;
+    position: relative;
+    z-index: 999;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 15px 25px;
+    color:white;
+
+}
+.brand-name{
+    letter-spacing: 40px;
+    cursor: pointer;
+}
+.navBtn{
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.navBtn:hover{
+    background: white;
+    color: black;
+    transition: transition;
+}
+.top-nav{
+    background: black;
+    transform: translateY(-600px);
+    transition: transition;
+}
+.showNav{
+    transform: translateY(0);
+}
+.search-icon{
+    display: none;
+}
+.top-nav ul li{
+    padding: 10px 0;
+}
+.top-nav ul a{
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+}
+.top-nav ul a::after{
+    content:"";
+    height: 2px;
+    background: lightgreen;
+    position: absolute;
+    bottom: -5px;
+    left: 50px;
+    transition: translate(-50%);
+    width: 0;
+    transition: transition;
+}
+.top-nav ul a:hover::after{
+    width: 100px;
+}
+.about{
+    margin-top:-160px;
+}
+.about-content img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    
+}
+.about-img{
+    background: #fff;
+    width: 150px;
+    height: 150px;
+    margin:0 auto;
+    border-radius: 50%;    
+
+}
+.about-content h2{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom:35px;
+    color: lightGreen;
+}
+.about-content h3{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 100;
+    background: rgba(255, 255, 255, 0.3);
+    width: 400px;
+    margin:35px auto;
+    text-align: center;
+}
+blockquote{
+    font-size: 20px;
+    font-weight: 300;
+    opacity: 0.9;
+    width: 60vw;
+    margin: 45px auto 15px auto;
+    text-align: center;
+}
+blockquote span{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: darkgreen;
+    font-weight: 300;
+    letter-spacing: 5px;
+    display: block;
+}
+.social-icons{
+    width: 350px;
+    margin: 40px auto 0 auto;
+    padding-bottom: 30px;
+
+}
+.social-icons ul a{
+    color: #fff;
+    font-size: 30px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transition;
+
+}
+.social-icons ul{
+    display: flex;
+    justify-content: space-around;
+}
+.social-icons ul a:hover{
+    background: lightgreen;
+    border-color: lightgreen;
+}
+
+.section-one{
+    margin: 40px 0;
+    min-height: 100vh;
+
+}
+.sec-one-left{
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1554080353-321e452ccf19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxMTc3M3wwfDF8c2VhcmNofDZ8fHBob3RvZ3JhcGh5fGVufDB8fHw&ixlib=rb-1.2.1&q=80&w=2000");
+    background-repeat: no-repeat;
+    background-size: 200vh;
+    box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px14px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px14px -1px rgba(0, 0, 0, 0.75);
+}
+.sec-one-left div{
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+}
+.sec-one-left div h3{
+    font-size: 28px;
+    opacity:0.9;
+
+}
+.sec-one-left div p{
+    font-weight: 300;
+    opacity: 0.8;
+}
+.sec-one-left h3{
+    color: lightgreen;
+}
+.sec-one-left >h3{
+    text-align: center;
+}
+.sec-one-left p{
+    opacity: 0.9;
+    font-weight: 300;
+
+}
+.work-content{
+    margin: 50px 0;
+
+}
+.work-imgs{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+}
+.work-img-1{
+    background-image: url("https://images.shiksha.com/mediadata/images/articles/1439545106phpuJSsZN.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 600px;
+    transition: transition;
+}
+.work-img-2{
+    background-image: url("https://cdn.pixabay.com/photo/2016/01/09/18/27/camera-1130731__340.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 600px;
+    transition: transition;
+}
+.work-imgs div:hover{
+    box-shadow: 0 0 8px #000;
+    -webkit-box-shadow: 0 0 8px #000;
+    -moz-box-shadow: 0 0 8px #000;
+    
+}
+.section-two{
+    margin: 40px 0;
+}
+.section-two h2{
+    text-align: center;
+    font-size: 40px;
+}
+.section-two span{
+    color: darkgray;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.insta-imgs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.insta-imgs > div{
+    position: relative;
+}
+.icon-overlay{
+    position:absolute;
+
+}
+
+     </style>
+</head>
+<body>
+    <header class="header" >
+        <div class="container nav-section">
+            <div class="brand-and-navBtn">
+                <span class="brand-name">
+                    SHUTTER UP
+                </span>
+                <span class="navBtn flex">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="index.html" class="activate">HOME</a></li>
+                    <li><a href="Galley.html">GALLERY</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <span class="search-icon">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+        <div class="container about">
+            <div class="about-content">
+                <div class="about-image" >
+                    <img src="https://media.istockphoto.com/photos/young-woman-using-dslr-camera-picture-id610259354?k=20&m=610259354&s=170667a&w=0&h=l2oFdp6dGyEVYtx2-aXaD4r-e46lTnt-rIsPQH7yyLI=" alt="photographer image">
+                </div>
+                <h2>I'm Monisha</h2>
+                <h3>Photographer | Traveller</h3>
+                <blockquote>
+                    "photography is a way of feeling, of touching, 
+                     of loving.What you have caught on film is 
+                     captured forever... It remembers little 
+                     things, long after you have forgotten
+                     everything"
+                     <span>-Aaron Siskind</span>
+
+
+                </blockquote>
+
+            </div>
+            <div class="social-icons">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="section-one">
+        <div class="container">
+            <div class="sec-one-left">
+                <div>
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum</p>
+                    <a href="#" class="btn">view all</a>
+                </div>
+            </div>
+            <div class="sec-one-right">
+                <div class="work-content">
+                    <h3>AMAZING TEAMWORK WORK WITH PROFESSIONAL PHOTOGRAPHERS</h3>
+                    <p>Lorem ipsum</p>
+                    <a href="#" class="btn">view all</a>
+                </div>
+                <div class="work-imgs">
+                    <div class="work-img-1">
+                    </div>
+                    <div class="work-img-2">
+                    </div>
+                </div>
+                <h3>"Taking an image, freezing a moment, reveals 
+                    how rich reality truly is"</h3>
+                    
+            </div>
+        </div>
+    </section>
+    <section class="section-two">
+        <div class="container">
+            <h2>FOLLOW ON INSTAGRAM</h2>
+            <span>@sutterup-photographer</span>
+            <div class="insta-imgs">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1577557525038-ffba9a2514fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80">
+                    <div class="icon-overlay flex">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            
+                <div>
+                    <img src="https://i.pinimg.com/originals/02/39/fd/0239fd2bc94436329423fe0d1e93a515.jpg">
+                    <div class="icon-overlay flex">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1579549322334-324325a6540b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y3JlYXRpdmUlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHw%3D&w=1000&q=80">
+                    <div class="icon-overlay flex">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://gdj-inr5u0ip5pewom.stackpathdns.com/wp-content/uploads/2012/01/87extremely-creative-photo.jpg">
+                    <div class="icon-overlay flex">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container container">
+            <div>
+                <h2>SHUTTER DOE</h2>
+                <p>Lorem ipsum</p>
+            </div>
+            <div>
+                <h3>Free subsription!</h3>
+                <p>Lorem ipsum</p>
+                <div class="subs">
+                    <i class="fas fa-envelop"></i>
+                    <input type="email" id="email" placeholder="Email Address">
+                    <button type="submit">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <p>&copy; copyright SHUTTERUP. SIMPLE AND NICE TEMPLATE</p>
+    </footer>
+</body>
+</html>
